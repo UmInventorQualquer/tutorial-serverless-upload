@@ -1,0 +1,34 @@
+{
+  "name": "serveless-upload",
+  "version": "1.0.0",
+  "description": "This is a serverless upload script using AWS-SDK",
+  "main": "upload.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmInventorQualquer/tutorial-serverless-upload.git"
+  },
+  "keywords": [
+    "serverless",
+    "upload",
+    "aws",
+    "sdk",
+    "s3",
+    "iam",
+    "sts"
+  ],
+  "author": "Wesley Milan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UmInventorQualquer/tutorial-serverless-upload/issues"
+  },
+  "homepage": "https://github.com/UmInventorQualquer/tutorial-serverless-upload#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.36.0",
+    "@aws-sdk/credential-provider-ini": "^3.36.0",
+    "axios": "^0.21.4"
+  }
+}
