@@ -31,8 +31,8 @@ Lembre-se de escolher um nome de bucket que esteja disponível na região que es
 
 ## Criando a função Lambda
 Este função é responsável por gerar uma chave assinada no formato de URL, que será utilizada para fazer o upload 
-do arquivo. Esta chave terá uma tempo de expiração e será vinculada a um determinado tipo de arquivo, no caso do 
-nosso exemplo, só aceitará arquivos do tipo JPEG pelo período de uma hora. Veja o arquivo fonta da função Lambda
+do arquivo. Esta chave terá um tempo de expiração e será vinculada a um determinado tipo de arquivo, no caso do 
+nosso exemplo, só aceitará arquivos do tipo JPEG pelo período de uma hora. Veja o arquivo fonte da função Lambda
 em [lambda/uploader/index.js](../lambda/uploader/index.js).
 
 ![image info](./images/step-2.png)
@@ -85,12 +85,12 @@ export UPLOAD_BUCKET=uiq-upload-bucket
 ## Variáveis de ambiente da função Lambda
 
 Nesta etapa nós vamos criar as variáveis de ambiente para passar os parâmetros para a nossa função Lambda, dessa 
-forma não é necessário fazer um novo deploy caso algo mude na infra-estrutura, e é possível fazer as alterações
+forma não é necessário fazer um novo deploy caso algo mude na infra-estrutura, é possível fazer as alterações
 de forma automatizada.
 
-No menu esquerdo clique na opção `Emvironment Variables`, em seguida clique em `Edit`.
+No menu esquerdo clique na opção `Environment Variables`, em seguida clique em `Edit`.
 
-Vamos criar uma variável chamda `UPLOAD_BUCKET` que irá conter o nome do bucket criado na primeira etapa deste tutorial.
+Vamos criar uma variável chamada `UPLOAD_BUCKET` que irá conter o nome do bucket criado na primeira etapa deste tutorial.
 
 ![image info](./images/step-9.png)
 
@@ -115,7 +115,7 @@ Na listagem de policies clique sobre o botão `Create Policy`.
 Na tela de criação de políticas de segurança, insira os seguintes dados nos respectivos campos:
 
 - Service: `S3`
-- Actions: `PuObject`
+- Actions: `PutObject`
 - Resources: Clique em `Edit` e informe o nome do bucket, e marque `any` no campo objects.
 
 Prossiga para a próxima tela.
