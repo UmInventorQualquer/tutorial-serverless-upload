@@ -16,7 +16,7 @@ Veja o diagrama de funcionamento:
 ![image info](./images/diagrams/upload-serverless.png)
 
 ## Requisitos
-- https://nodejs.org/ alterativamente você pode rodar um container docker do Node JS https://hub.docker.com/_/node
+- https://nodejs.org/ alternativamente você pode rodar um container docker do Node JS https://hub.docker.com/_/node
 
 Para preparar a infraestrutura vamos seguir os seguintes passos:
 
