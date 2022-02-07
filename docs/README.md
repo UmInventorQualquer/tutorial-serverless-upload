@@ -30,7 +30,7 @@ Lembre-se de escolher um nome de bucket que esteja disponível na região que es
 ![image info](./images/step-1.png)
 
 ## Criando a função Lambda
-Este função é responsável por geror uma chave assinada no formato de URL, que será utilizada para fazer o upload 
+Este função é responsável por gerar uma chave assinada no formato de URL, que será utilizada para fazer o upload 
 do arquivo. Esta chave terá uma tempo de expiração e será vinculada a um determinado tipo de arquivo, no caso do 
 nosso exemplo, só aceitará arquivos do tipo JPEG pelo período de uma hora. Veja o arquivo fonta da função Lambda
 em [lambda/uploader/index.js](../lambda/uploader/index.js).
